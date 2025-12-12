@@ -44,7 +44,12 @@ export default function ShareBar({
   }
 
   return (
-    <div className={["flex items-center gap-2", className ?? ""].join(" ")}>
+    <div
+      className={[
+        "flex flex-col sm:flex-row items-center gap-2",
+        className ?? "",
+      ].join(" ")}
+    >
       <a
         href={wapp || "#"}
         target="_blank"
